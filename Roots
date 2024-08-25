@@ -1,0 +1,59 @@
+import java.io.*;
+
+import java.lang.*;
+
+import java.util.*;
+
+class roots
+
+public static void main(String args[]) {
+
+Scanner in=new Scanner(System.in);
+
+System.out.println("Enter a, b and c");
+
+int a=in.nextInt();
+
+int b=in.nextInt();
+
+int c=in.nextInt();
+
+double d=(b*b)-(4*a*c);
+
+if(d>0) {
+
+System.out.println("Roots are real and distinct");
+
+double root1=((-b+(Math.sqrt(d)))/(2*a)); double root2=((-b-(Math.sqrt(d)))/(2*a))
+
+; System.out.println("Roots are "+root1+" and "+root2);
+
+20}
+
+21 else if(d==0)
+
+22 (
+
+double root=-b/(2*a);
+
+24 System.out.println("Roots are real and equal");
+
+25 System.out.println("Roots are "+root+" and "+root);
+
+26}
+
+27 else
+
+28 (
+
+29 System.out.println("Roots are complex");
+
+30}
+
+31}
+
+32}
+<!---
+Jeffin2165/Jeffin2165 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->

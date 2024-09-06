@@ -1,0 +1,58 @@
+#include<stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int maxsize = 10, a[maxsize], top = -1, ch, item, i;
+    while(1)
+    {
+        printf("\n1.PUSH\n2.POP\n3.DISPLAY\n4.EXIT\nEnter your choice: ");
+        scanf("%d",&ch);
+        switch(ch)
+        {
+            case 1: if(top==(maxsize-1))
+                    {
+                        printf("Stack is full");
+                    }
+                    else
+                    {
+                        printf("Enter element to be inserted: ");
+                        scanf("%d",&item);
+                        if(top==-1)
+                        {
+                            top=0;
+                        }
+                        else
+                        {
+                            top++;
+                        }
+                        a[top]=item;
+                    }
+                    break;
+            case 2: if(top==-1)
+                    {
+                        printf("Stack is empty");
+                    }
+                    else
+                    {
+                        item=a[top];
+                        top--;
+                        printf("Deleted item = %d",item);
+                    }
+                    break;
+            case 3: if(top==-1)
+                    {
+                        printf("Stack is empty");
+                    }
+                    else
+                    {
+                        printf("Stack: ");
+                        for(i=0;i<=top;i++)
+                        {
+                            printf("%d\t",a[i]);
+                        }
+                    }
+                    break;
+            case 4: exit(0);
+        }
+    }
+}

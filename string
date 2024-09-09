@@ -1,0 +1,54 @@
+import java.lang.*;
+import java.util.*;
+ class string
+{
+public static void main(String[] args)
+{
+String s1,s2;
+int ch;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter 2 string");
+Scanner Ab=new Scanner(System.in);
+s1=sc.nextLine();
+s2=sc.nextLine();
+System.out.println("1.string length\n2.string concatenation\n3.charAt\n4.getchar\n5.equal\n6.compare\n enter the choice");
+ch=sc.nextInt();
+switch(ch)
+{
+case 1:
+System.out.println("length of first string="+s1.length());
+System.out.println("length of second string="+s2.length());
+break;
+case 2:
+System.out.println(s1+s2);
+break;
+case 3:
+int p;
+System.out.println("enter the position");
+p=sc.nextInt();
+char c=s1.charAt(p);
+System.out.println(c);
+break;
+case 4:
+System.out.println("enter a string");
+String s=Ab.nextLine();
+int start,end;
+System.out.println("enter the starting position");
+start=sc.nextInt();
+System.out.println("enter the ending position");
+end=sc.nextInt();
+char b[]=new char[end];
+s.getChars(start,end,b,0);
+System.out.println(b);
+case 5:
+System.out.println(s1.equals(s2));
+break;
+case 6:
+System.out.println(s1.compareTo(s2));
+break;
+default:
+System.out.println("invalid choice");
+break;
+}
+}
+}

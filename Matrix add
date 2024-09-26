@@ -3,103 +3,79 @@ public class matrixaddition
 {
   public static void main(String args[])
 {
-Scanner sc = new Scanner (System.in); 
-int i,j, m,n,p,q;
-{
+Scanner sc=new Scanner(System.in); 
+int i,j,m,n,p,q;
 
-int[][]a = new int [10][10]; 
-int[][]b= new int [10][10];
+int[][]a =new int[10][10]; 
+int[][]b=new int[10][10];
 
-int[][]c= new int [20] [20];
+int[][]c=new int[20][20];
 
-System.out.println ("takethe order of ist mtx");
+System.out.println("takethe order of ist mtx");
+m=sc.nextInt();
 
-m = sc.nextInt();
-
-n= sc.nextInt();
+n=sc.nextInt();
 
 System.out.println("Ent's the order of 2nd mtx."); 
-p = sc.nextInt();
+p=sc.nextInt();
 
 q=sc.nextInt();
 
 System.out.println(" Entr the 1st matrix");
-for (i=0; i<m; i++) 
+for(i=0;i<m;i++) 
 {
-for (j=0;j<n; j++)
+for(j=0;j<n;j++)
 {
-a[i][j] = sc.nextInt();
+a[i][j]=sc.nextInt();
 }}
 System.out.println("enter tthe 2nd matrix");
-for (i=0; i<p; i++)
+for(i=0;i<p;i++)
 {
-for (j=0;j<q; j++)
+for(j=0;j<q;j++)
 {
-b[i][j] = sc.nextInt();
+b[i][j]=sc.nextInt();
 }}
-System.out.println (" ist matrix is "); 
-for (i=0; i<m; i++)
+System.out.println(" ist matrix is "); 
+for(i=0;i<m;i++)
 {
-for (j=0; j<n; j++)
+for(j=0;j<n;j++)
 {
-System.out.println("a[i][j]" );
-System.out.println("It");
+System.out.println(a[i][j] );
+System.out.println("\t");
 }
  System.out.println("");
 }
 System.out.println("2nd Mitx is: "); 
-for (i=0; i<p; i++)
+for(i=0; i<p; i++)
 {
-for (j=0; j<q; j++)
+for(j=0; j<q; j++)
 {
-System.out.println("b[i][j]"); 
-System.out.println("lt");
+System.out.println(b[i][j]); 
+System.out.println("\t");
 }
 System.out.println("");
 }
-if ((m==p) && (n==q))
+if((m==p) && (n==q))
 {
-for (i=0; i<m; i++)
+for(i=0; i<m; i++)
 {
-for (j=0;j<n; j++)
+for(j=0;j<n; j++)
 {
-c[i][j] = a[i][j]+b[i][j];
+c[i][j]=a[i][j]+b[i][j];
 }}
 System.out.println("Sum of the matrix"); 
-for (i=0; i<m;i++)
+for(i=0; i<m;i++)
 {
-  for (j=0; j<n; j++)
+  for(j=0; j<n; j++)
 {
-System.out.println("c[i][j]");
-System.out.println("It");
+System.out.println(c[i][j]);
+System.out.println("\t");
 }
 System.out.println("");
 }}
-
 else
 {
-System.out.println ("Addition not possible");
-}}if ((m==p) && (n==q))
-{
-for (i=0; i<m; i++)
-{
-for (j=0;j<n; j++)
-{
-c[i][j] = a[i][j]+b[i][j];
-}}
-System.out.println("Sum of the matrix"); 
-for (i=0; i<m;i++)
-{
-  for (j=0; j<n; j++)
-{
-System.out.println("c[i][j]");
-System.out.println("It");
-}
-System.out.println("");
-}}
+System.out.println("Addition not possible");
+}}}
 
-else
-{
-System.out.println ("Addition not possible");
 }}
-  

@@ -1,0 +1,83 @@
+import java.util.*;
+public class matrixaddition
+{
+  public static void main(String args[])
+{
+Scanner sc = new Scanner (System.in); 
+int i,j, m,n,p,q;
+{
+
+int[][]a = new int [10][10]; 
+int[][]b= new int [10][10];
+
+int[][]c= new int [20] [20];
+
+System.out.println ("takethe order of ist mtx");
+
+m = sc.nextInt();
+
+n= sc.nextInt();
+
+System.out.println("Ent's the ender of 2nd mtx."); 
+p = sc.nextInt();
+
+q=sc.nextInt();
+
+System.out.println(" Entr the 1st matrix");
+for (i=0; i<m; i++) 
+{
+for (j=0;j<n; j++)
+{
+a[i][j] = sc.nextInt();
+}}
+System.out.println("enter tthe 2nd matrix");
+for (i=0; i<p; i++)
+{
+  if ((m==p) && (n==q))
+{
+for (i=0; i<m; i++)
+{
+for (j=0;j<n; j++)
+{
+c[i][j] = a[i][j]+b[i][j];
+}}
+System.out.println("Sum of the matrix"); 
+for (i=0; i<m;i++)
+{
+  for (j=0; j<n; j++)
+{
+System.out.println("c[i][j]");
+System.out.println("It");
+}
+System.out.println("");
+}}
+
+else
+{
+System.out.println ("Addition not possible");
+}}
+for (j=0;j<q; j++)
+{
+b[i][j] = sc.nextInt();
+}}
+System.out.println (" ist matrix is "); 
+for (i=0; i<m; i++)
+{
+for (j=0; j<n; j++)
+{
+System.out.println("a[i][j]" );
+System.out.println("It");
+}
+ System.out.println("");
+}
+System.out.println("2nd Mitx is: "); 
+for (i=0; i<p; i++)
+{
+for (j=0; j<q; j++)
+{
+System.out.println("b[i][j]"); 
+System.out.println("lt");
+}
+System.out.println("");
+}}}
+  

@@ -18,7 +18,7 @@ m = sc.nextInt();
 
 n= sc.nextInt();
 
-System.out.println("Ent's the ender of 2nd mtx."); 
+System.out.println("Ent's the order of 2nd mtx."); 
 p = sc.nextInt();
 
 q=sc.nextInt();

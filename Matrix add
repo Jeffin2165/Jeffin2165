@@ -40,8 +40,8 @@ for(i=0;i<m;i++)
 {
 for(j=0;j<n;j++)
 {
-System.out.println(a[i][j] );
-System.out.println("\t");
+System.out.print(a[i][j] );
+System.out.print("\t");
 }
  System.out.println("");
 }
@@ -50,8 +50,8 @@ for(i=0; i<p; i++)
 {
 for(j=0; j<q; j++)
 {
-System.out.println(b[i][j]); 
-System.out.println("\t");
+System.out.print(b[i][j]); 
+System.out.print("\t");
 }
 System.out.println("");
 }
@@ -68,8 +68,8 @@ for(i=0; i<m;i++)
 {
   for(j=0; j<n; j++)
 {
-System.out.println(c[i][j]);
-System.out.println("\t");
+System.out.print(c[i][j]);
+System.out.print("\t");
 }
 System.out.println("");
 }}
@@ -77,4 +77,3 @@ else
 {
 System.out.println("Addition not possible");
 }}}
-

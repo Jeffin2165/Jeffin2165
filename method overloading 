@@ -1,0 +1,26 @@
+import java.util.*;
+class Shape
+{ 
+void area (float x) 
+ { 
+float ar = x * x; 
+System.out.println ("the area of the square is " + ar);
+} 
+void area (float x, float y) 
+ {
+float ar = x * y;
+System.out.println ("the area of the Rectangle is " + ar);
+ } 
+void area (double r) 
+ {
+double ar = 3.14 * r * r; 
+System.out.println ("the area of the Circle is " + ar);
+ } 
+public static void main (String[]args) 
+ {
+Shape sh = new Shape();
+sh.area (5);
+sh.area (6, 4);
+sh.area (2.0d);
+} 
+}

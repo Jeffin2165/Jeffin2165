@@ -1,0 +1,107 @@
+import java.util.*;
+
+class StringFunctions
+{
+public static void main (String args[])
+{
+Scanner sc = new Scanner (System.in);
+int i = 0;
+
+boolean run= true;
+
+while (run)
+{
+System.out.println ("\n\n\nMenu ");
+
+System.out.println ("1.Length of Strnig");
+
+System.out.println ("2.Concatenation ");
+
+System.out.println ("3.Single charactor Extraction ");
+
+System.out.println ("4. Multiple Character Extraction");
+
+System.out.println ("5. Equal");
+System.out.println("6.Compare TO");
+
+System.out.println ("7.Exit \n");
+
+int c=sc.nextInt();
+
+switch (c)
+
+{
+
+case 1:
+
+String str= "Hello";
+
+System.out.println ("length of the string is:" +str.length());
+break;
+
+case 2:
+
+String st1= "9";
+
+String st2= "He is "+st1+ "years old"; System.out.println (st2);
+break;
+
+case 3:
+
+String st3 ="hello world";
+
+char a =st3.charAt (6);
+System.out.println ("the charachter is at position 6 is"+a); 
+break;
+
+case 4:
+
+String st4 ="This is a java program"; 
+int start = 3; 
+int end = 11; 
+char b[]= new char[8]; 
+st4.getChars (start, end, b, 0);
+System.out.print (b); 
+break;
+case 5:
+
+String st5 ="hello";
+
+String st6= "Hello";
+
+if (st5.equals (st6))
+{
+System.out.println ("both strings are equal");
+
+}
+
+else
+{
+
+System.out.println ("both strings are not equal");
+}
+break;
+
+case 6:
+String st7 ="hello";
+String st8= "Hello";
+String st9= "World";
+String st10= "WORLD"; 
+System.out.println (st7.compareTo (st8)); System.out.println (st8.compareTo (st9));
+System.out.println (st7.compareTo (st10));
+System.out.println (st9.compareTo (st10));
+
+break;
+
+case 7:
+
+run = false;
+
+break;
+
+default:
+
+System.out.println ("Invalid input");
+
+break;
+}}}}
